@@ -129,7 +129,7 @@ public class Animal
         }
 
         // Return false if the other object is not an Animal:
-        // (use instanceof to do this)
+        // (use instance of to do this)
         if (!(other instanceof Animal))
         {
             return false;
@@ -140,8 +140,12 @@ public class Animal
 
         // Check that all fields match (color, name, weight, height):
         
-        // TODO: finish this...
-        
-        /* return TODO; */
+        if (otherAni.getColor() == this.color && otherAni.getName() == this.name && 
+        		otherAni.getWeight() == this.weight && otherAni.getHeight() == this.height) {
+        	return true;
+        }
+        else {
+        	return false;
+        }
     }
 }
